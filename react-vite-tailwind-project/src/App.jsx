@@ -1,18 +1,29 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import EmployeeForm from './components/EmployeeForm'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <div className='bg-slate-500'>
-      <h1>
-        vivek singh
-      </h1>
-     </div>
+    <div>
+      <EmployeeForm/>
+    </div>
+     {/* <div className='bg-slate-500 flex gap-10 justify-center'>
+      <div>
+        vivek
+      </div>
+      <div>
+        singh
+      </div>
+      <div>
+        React
+      </div>
+      <div>
+        Developer
+      </div>
+     </div> */}
     </>
   )
 }
